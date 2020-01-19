@@ -1,0 +1,30 @@
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-hand {
+    cursor: none;
+    font-size: 100px;
+    transition: transform .2s ease-in-out;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    -ms-transition: -ms-transform .2s ease-in-out;
+}
+
+#home-hand:hover {
+    animation: wave 1.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes wave {
+    20% {
+        transform: rotate(20deg);
+    }
+    70% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: none;
+    }
+}

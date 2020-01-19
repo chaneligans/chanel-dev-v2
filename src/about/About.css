@@ -1,0 +1,21 @@
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-headshot {
+    width: 250px;
+}
+
+#about-right {
+    max-width: 500px;
+    margin: 25px;
+    overflow: auto;
+}
+
+#about-skills {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+}
