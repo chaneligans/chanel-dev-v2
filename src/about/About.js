@@ -5,7 +5,11 @@ import "./About.css";
 export class About extends React.Component {
   render() {
     const pic = <img id="about-headshot" src={photo}></img>;
-    const title = <div id="about-title">About Me</div>;
+    const title = (
+      <div id="about-title" className="section-title">
+        About Me
+      </div>
+    );
     const desc = (
       <div id="about-desc">
         I'm Chanel, a fourth-year Computer Science student at California State
