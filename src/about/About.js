@@ -1,6 +1,5 @@
 import React from "react";
 import photo from "./headshot.png";
-import "./About.css";
 
 export class About extends React.Component {
   render() {

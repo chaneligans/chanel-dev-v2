@@ -1,11 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather&display=swap');
+
+::selection {
+    background-color: #3D85C6;
+    color: #FFF;
+}
+
 html {
-    margin: 0 100px;
-    background-color:gray;
     scroll-behavior: smooth;
 }
 
-.section {
-    max-width: 1200px;
-    margin: auto;
-    /*height: calc(100vh + 50px);*/
+body {
+    font-family: 'Inconsolata', monospace;
+    background-image: url("./images/geometry2.png");
 }
+
+.title {
+    font-family: 'Merriweather', serif;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #3D85C6;
+}
+
+a:hover {
+    color: #9fc5e8;
+}
+
+.section {
+    max-width: 1000px;
+    margin: auto;
+    min-height: calc(60vh + 50px);
+    /* background-color: rgba(255, 255, 255, 0.3); */
+}
+
+.section-title {
+    font-weight: bold;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: fixed;
+    background-color: rgba(249, 250, 251, 0.95);
+    width: 100%;
+  }
+  
+  #header-logo {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  
+  .nav-item {
+    margin: 5px;
+    padding-right: 20px;
+  }  
+
+/* END HEADER */
+
+/* HOME */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+}
+
+#home-hand {
+    cursor: none;
+    font-size: 100px;
+    transition: transform .2s ease-in-out;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    -ms-transition: -ms-transform .2s ease-in-out;
+}
+
+#home-hand:hover {
+    animation: wave 1.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes wave {
+    20% {
+        transform: rotate(20deg);
+    }
+    70% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+/* END HOME */
+
+/* ABOUT */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-headshot {
+    width: 250px;
+}
+
+#about-right {
+    max-width: 500px;
+    margin: 25px;
+    overflow: auto;
+}
+
+#about-skills {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+}
+
+/* END ABOUT */
+
+/* EXPERIENCE */
+#experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.exp-item {
+    min-height: 50px;
+}
+
+/* END EXPERIENCE */
+
+/* PROJECTS */
+
+.project-img {
+    max-width: 100%;
+}
+
+/* END PROJECTS */

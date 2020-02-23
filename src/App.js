@@ -3,7 +3,8 @@ import "./App.css";
 import { Nav } from "./header/Header";
 import { Home } from "./home/Home";
 import { About } from "./about/About";
-import { Experience } from "./experience/Experience"
+import { Experience } from "./experience/Experience";
+import { Projects } from "./projects/Projects";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Home></Home>
       <About></About>
       <Experience></Experience>
+      <Projects></Projects>
     </div>
   );
 }

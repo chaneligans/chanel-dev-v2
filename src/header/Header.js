@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../logo.svg";
-import "./Header.css";
 
 export class Nav extends React.Component {
   render() {
@@ -15,7 +14,8 @@ export class Nav extends React.Component {
 
     return (
       <header>
-        <img src={logo} id="logo"></img>
+        {/* <img src={logo} id="logo"></img>  */}
+        <span id="header-logo">🤖</span>
         <nav>{sectionLinks}</nav>
       </header>
     );
