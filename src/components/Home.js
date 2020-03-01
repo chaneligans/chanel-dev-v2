@@ -6,13 +6,13 @@ export class Home extends React.Component {
     const title = <div className="home-title">Hello!</div>;
     const name = (
       <div className="home-title">
-        My name is <span id="home-name">Chanel Mendoza</span>.
+        My name is <span id="home-name" className="home-emphasis">Chanel Mendoza</span>.
       </div>
     );
     const desc = (
-      <div className="home-desc">I am an aspiring <span id="home-job">software engineer</span>.</div>
+      <div className="home-desc">I am an aspiring <span id="home-job" className="home-emphasis">Software Engineer</span>.</div>
     );
-    const contactBtn = <button>Get in Touch</button>;
+    const contactBtn = <button id="home-btn">Get in Touch</button>;
     return (
       <div id="home" className="section">
         {hand}
