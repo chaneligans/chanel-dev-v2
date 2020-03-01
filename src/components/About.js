@@ -1,5 +1,5 @@
 import React from "react";
-import photo from "./headshot.png";
+import photo from "../images/headshot.png";
 
 export class About extends React.Component {
   render() {
@@ -32,11 +32,11 @@ export class About extends React.Component {
     ];
 
     const skillsList = skills.map(skill => {
-      return <li class="about-skill">{skill}</li>;
+      return <li className="about-skill" key={skill}>{skill}</li>;
     });
 
     return (
-      <div id="about" class="section">
+      <div id="about" className="section">
         {pic}
         <div id="about-right">
           {title} {desc} <ul id="about-skills">{skillsList}</ul>

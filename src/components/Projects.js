@@ -1,14 +1,16 @@
 import React from "react";
-import studyChumsImg from "./study-chums.png";
-import domatesImg from "./domates1.jpg";
-import casinoBotImg from "./domates2.jpg";
+import studyChumsImg from "../images/study-chums.png";
+import domatesImg from "../images/domates.png";
+import casinoBotImg from "../images/casino-bot.png";
 
 export class Projects extends React.Component {
   createProject(title, photo, description, technologies) {
     const id = "project-" + title;
     const item = (
       <div id={id} className="project-item">
-        <img className="project-img" src={photo} alt={title}></img>
+        <div className="project-img-container">
+          <img className="project-img" src={photo} alt={title}></img>
+        </div>
         <div className="project-title">{title}</div>
         <div className="project-desc">{description}</div>
         <div className="project-tech">{technologies}</div>
@@ -61,7 +63,7 @@ export class Projects extends React.Component {
 
     const casinoBotDesc = "asdfadffsdf";
     const casinoBotTech = (
-        <ul>
+      <ul>
         <li>Firebase</li>
         <li>Firebase</li>
         <li>Firebase</li>
@@ -69,17 +71,17 @@ export class Projects extends React.Component {
       </ul>
     );
     const casinoBot = this.createProject(
-        "CasinoBot",
-        casinoBotImg,
-        casinoBotDesc,
-        casinoBotTech
+      "CasinoBot",
+      casinoBotImg,
+      casinoBotDesc,
+      casinoBotTech
     );
 
     return (
-      <div id="projects" class="section">
+      <div id="projects" className="section">
         {title}
         <div id="project-items">
-          {studyChums} {domates} {casinoBot}
+          {studyChums} {casinoBot} {domates}
         </div>
       </div>
     );

@@ -6,7 +6,7 @@ export class Nav extends React.Component {
     const sections = ["about", "experience", "portfolio", "resume", "contact"];
     const sectionLinks = sections.map(section => {
       return (
-        <a href={"#" + section} className="nav-item">
+        <a href={"#" + section} className="nav-item" key={section}>
           {section}
         </a>
       );
