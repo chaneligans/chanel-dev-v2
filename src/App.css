@@ -185,8 +185,8 @@ header {
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  text-align: right;
-  list-style-position: inside;
+  /* text-align: right; */
+  /* list-style-p osition: inside; */
 }
 
 .project-desc-container {

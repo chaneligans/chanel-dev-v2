@@ -11,13 +11,12 @@ export class About extends React.Component {
     );
     const desc = (
       <div id="about-desc">
-        I'm Chanel, a fourth-year Computer Science student at California State
-        University, Long Beach. Phasellus non risus id purus vehicula
-        condimentum. Maecenas vel suscipit justo. Suspendisse ac fringilla
-        tortor, a commodo lacus. Cras ac nulla lacus. Maecenas interdum massa
-        nec velit tempus, accumsan porta est rhoncus. In egestas enim a est
-        congue, a pharetra dolor mattis. In pellentesque finibus augue, et
-        posuere libero dapibus ut.
+        I'm Chanel, a graduating Computer Science student at California State
+        University, Long Beach. I've always been passionate about creating
+        things, and developing is just one of the many ways I like to express
+        myself. My main interests are software development and full stack
+        development because I like how easy it is to incorporate creativity into
+        both!
       </div>
     );
     const skills = [
@@ -25,6 +24,7 @@ export class About extends React.Component {
       "Python",
       "MySQL",
       "C++",
+      "React",
       "JavaScript",
       "HTML & CSS",
       "Git",
@@ -32,14 +32,18 @@ export class About extends React.Component {
     ];
 
     const skillsList = skills.map(skill => {
-      return <li className="about-skill" key={skill}>{skill}</li>;
+      return (
+        <li className="about-skill" key={skill}>
+          {skill}
+        </li>
+      );
     });
 
     return (
       <div id="about" className="section">
         {pic}
         <div id="about-right">
-          {title} {desc} <ul id="about-skills">{skillsList}</ul>
+          {title} {desc} Here are some of the skills I've learned so far: <ul id="about-skills">{skillsList}</ul>
         </div>
       </div>
     );

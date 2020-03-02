@@ -24,9 +24,10 @@ export class Experience extends React.Component {
     const sharkLabLoc = "Shark Lab, CSULB";
     const sharkLabDate = "Oct 2019 - Present";
     const sharkLabDesc =
-      "Mauris consequat pellentesque purus nec finibus." +
-      "Donec pretium massa in nisl tempus scelerisque. " +
-      "Sed scelerisque nibh interdum elit faucibus condimentum.";
+      "At the Shark Lab, I am responsible for updating and creating "+
+      "ADA compliant content for CSULB’s official SharkLab website"+
+      " using Drupal. I also assist with organizing data collected "+
+      "from sharks that swim past various sensors using MySQL.";
     const sharkLab = this.createExperience(
       "Webmaster & Programming Assistant",
       sharkLabDesc,
@@ -37,17 +38,19 @@ export class Experience extends React.Component {
     const acmLoc = "Association for Computing Machinery, CSULB";
     const acmDate = "May 2019 - Present";
     const acmDesc =
-      "Mauris consequat pellentesque purus nec finibus." +
-      "Donec pretium massa in nisl tempus scelerisque. " +
-      "Sed scelerisque nibh interdum elit faucibus condimentum.";
+      "As the Lead Webmaster for ACM, I created the association’s official"+
+      " website as well as the BeachHacks 2020 website using HTML, CSS, and React."+
+      " I also assign developmental tasks to other webmasters to add new functional"+
+      " features to each website.";
     const acm = this.createExperience("Lead Webmaster", acmDesc, acmDate, acmLoc);
 
     const cecsLoc = "Introduction to Programming and Problem Solving, CSULB"
     const cecsDate = "Jan 2019 - May 2019";
     const cecsDesc =
-      "Mauris consequat pellentesque purus nec finibus." +
-      "Donec pretium massa in nisl tempus scelerisque. " +
-      "Sed scelerisque nibh interdum elit faucibus condimentum.";
+      "During my time as an Instructional Student Assistant, I Led 2 classes per week"+
+      " of up to 30 students to assist students with their lab assignments."+
+      " I also evaluated students’ laboratory and homework assignments"+
+      " to provide constructive feedback on good programming practice.";      
     const cecs = this.createExperience(
       "CSULB Instructional Student Assistant",
       cecsDesc,
