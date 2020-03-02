@@ -6,7 +6,7 @@ export class Experience extends React.Component {
     const item = (
       <div id={id} className="exp-item">
         <div className="exp-title">{title}</div>
-        <div className="exp-loc">{location}</div>
+        <div className="exp-loc"> @ {location}</div>
         <div className="exp-date">{date}</div>
         <div className="exp-desc">{description}</div>
       </div>
@@ -17,7 +17,7 @@ export class Experience extends React.Component {
   render() {
     const title = (
       <div id="exp-title" className="section-title">
-        Experience
+        Work Experience
       </div>
     );
 

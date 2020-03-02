@@ -11,9 +11,11 @@ export class Projects extends React.Component {
         <div className="project-img-container">
           <img className="project-img" src={photo} alt={title}></img>
         </div>
-        <div className="project-title">{title}</div>
-        <div className="project-desc">{description}</div>
-        <div className="project-tech">{technologies}</div>
+        <div className="project-desc-container">
+          <div className="project-title">{title}</div>
+          <div className="project-desc">{description}</div>
+          <div className="project-tech">{technologies}</div>
+        </div>
       </div>
     );
     return item;

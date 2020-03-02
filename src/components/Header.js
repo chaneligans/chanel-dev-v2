@@ -3,7 +3,7 @@ import logo from "../logo.svg";
 
 export class Nav extends React.Component {
   render() {
-    const sections = ["about", "experience", "portfolio", "resume", "contact"];
+    const sections = ["about", "projects", "experience", "contact", "resume"];
     const sectionLinks = sections.map(section => {
       return (
         <a href={"#" + section} className="nav-item" key={section}>
