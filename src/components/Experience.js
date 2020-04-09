@@ -47,7 +47,7 @@ export class Experience extends React.Component {
     const cecsLoc = "Introduction to Programming and Problem Solving, CSULB"
     const cecsDate = "Jan 2019 - May 2019";
     const cecsDesc =
-      "During my time as an Instructional Student Assistant, I Led 2 classes per week"+
+      "During my time as an Instructional Student Assistant, I led 2 classes per week"+
       " of up to 30 students to assist students with their lab assignments."+
       " I also evaluated students’ laboratory and homework assignments"+
       " to provide constructive feedback on good programming practice.";      
